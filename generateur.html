@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <script src="java.js" defer></script>
+    <link rel="stylesheet" href="generateur.css">
+    <title>Générateur de password</title>
+</head>
+<body>
+    <div class="global">
+    <div class="container">
+        <h1 class="title">Générer un mot de passe</h1>
+        <textarea class="password-display" id="passwordDisplay">Mot de passe</textarea>
+
+
+        <form  class="form" id="passwordGeneratorForm">
+
+
+            <label for="characterAmountNumber">Nombre de caractères</label>
+            <div class="charactere-amount-container">
+                <input type="range" value="10" min="8" max="50" id="characterAmountRange">
+                <input class="number-input" type="number" value="10" min="8" max="50" id="characterAmountNumber">
+
+            </div>
+
+
+            <label for="includeUppercase">Inclure majuscules</label>
+            <input type="checkbox" id="includeUppercase">
+
+
+            <label for="includeNumbers">Inclure les nombres</label>
+            <input type="checkbox" id="includeNumbers">
+
+
+            <label for="includeSymbols">Inclure les symboles</label>
+            <input type="checkbox" id="includeSymbols">
+
+
+            <button type="submit" class="button">Générer un mot de passe</button>
+            <a href="index.php"<h1>Retour</h1></a>
+            <button id="copier" type="button">Copier dans le clipboard</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
